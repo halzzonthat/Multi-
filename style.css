@@ -1,4 +1,3 @@
-/* General Design Elements */
 :root {
     --bg-color: #0b0b0b;
     --header-bg: #111111;
@@ -32,7 +31,6 @@ body {
     flex-direction: column;
 }
 
-/* Loading Sequence */
 body.loading {
     overflow: hidden;
 }
@@ -95,7 +93,6 @@ body:not(.loading) .loader {
     50% { opacity: 1; }
 }
 
-/* Header */
 header {
     padding: 3rem 1.5rem;
     text-align: center;
@@ -179,7 +176,6 @@ body:not(.loading) header {
     transform: scale(1.05);
 }
 
-/* Main Content Section Styles */
 main {
     flex: 1;
     padding: 2rem 1.5rem;
@@ -221,7 +217,6 @@ main {
     letter-spacing: 2px;
 }
 
-/* Glass Cards */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -276,7 +271,6 @@ main {
     font-size: 0.95rem;
 }
 
-/* Download Button Styles */
 .btn-download {
     text-decoration: none;
     color: var(--text-color);
@@ -300,7 +294,6 @@ main {
     border-color: var(--text-color);
 }
 
-/* Receipts Card */
 .receipts-container {
     max-width: 900px;
     margin: 0 auto;
@@ -439,7 +432,27 @@ footer {
     opacity: 0.5;
 }
 
-/* Responsive Adjustments */
+#trail-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: var(--text-color);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
 @media (max-width: 768px) {
     .brand-text {
         font-size: 2.5rem;

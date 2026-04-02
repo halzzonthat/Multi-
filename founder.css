@@ -11,7 +11,7 @@
 .founder-main {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Raise it */
+    align-items: flex-start;
     padding-top: 2rem;
     min-height: calc(100vh - 100px);
     width: 100%;
@@ -93,9 +93,9 @@
     letter-spacing: 1px;
 }
 
-/* 3D Effect Tilt - Added via JS */
 
-/* Cursor Trail */
+
+
 #trail-container {
     position: fixed;
     top: 0;
